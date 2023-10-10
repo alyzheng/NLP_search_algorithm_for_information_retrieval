@@ -32,30 +32,30 @@ relevant to the user's query
 The main question is how to build an effective retriever when working with a database of entries.
 Typically, two solutions are considered for the Information Retrieval (IR) task.
 
-#### 1. BM 25 Frequency-based Retriever : \n
-##### Pros : \n"
+#### 1. BM 25 Frequency-based Retriever 
+##### Pros : 
     a. BM25 is computationally efficient (no training needed) and scales well for a mobile app
        environment with potentially large datasets
     b. It can be effective for simple search tasks, such as category, brand, or retailer lookup
-##### Cons : \n"
+##### Cons : 
     a. BM25 does not consider the semantic meaning or context of the user query, which may
        result in suboptimal ranking, so the algorithm might not select the potential offers that
        best fit with users’ query
     b. BM25 does not adapt to changing user behavior or preferences
 
-#### 2.Neural Retriever (SentenceTransformer): \n
-##### Pros : \n"
+#### 2.Neural Retriever (SentenceTransformer): 
+##### Pros : 
     a. Better performance on information retrieval benchmark, which is to say, the potential
        offers that returned to the user will be more accurate
     b. Align well with user intent by capturing complex semantic relationships between queries,
        which will generate relevant and context-aware potential offers relevant to the user
        queries
-##### Cons : \n"
+##### Cons : 
     a. Rely on large amounts of labeled data for training, and the availability of such data for
        specific retail domains and offer categories may vary, affecting the performance of the
        algorithm
 
-#### 3. Solution Retriever: \n
+#### 3. Solution Retriever: 
 I chose Neural Retriever as the solution method, for 1) Its better performance to understand user’s
 query 2) Its limitation can be avoided by using pre-trained models. 
 To further improve the performance, I chose to deploy a rerank algorithm for the retrieved offers,
@@ -84,7 +84,7 @@ app experience.
 
 
 ### Appendix: Technical Specifications
-#### 1. Character-level Matching (Ngram Fuzzy Search) \n
+#### 1. Character-level Matching (Ngram Fuzzy Search) 
     a. Ngram Similarity Calculation
     Begin by calculating character-level similarity between the user’s typo query and potential
     actual queries.
@@ -93,7 +93,7 @@ app experience.
     c. Top-K Potential Queries
     Finally, return the top-K potential queries based on their similarity scores.
 
-#### 2. SentenceTransformer \n
+#### 2. SentenceTransformer 
     a. Semantic Representation
     Begin by converting database entries and user query into vectorized representations using
     SentenceTransformer.
