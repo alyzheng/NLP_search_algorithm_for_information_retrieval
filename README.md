@@ -4,24 +4,30 @@
 
 Fetch Rewards is a mobile app that rewards users for scanning and uploading shopping receipts,
 and allows users to earn points for gift cards—a rewarding way to shop
+
 Now Fetch wants to develop an effective tool for users to search for offers easily, so as to maximize
 app usage and enhance partner relationships
 
-#### Requirements
+### Requirements
 
 The tool should return a list of relevant offers when a user searches for a category/brand/retailer.
+
 The tool should return the score used to measure the similarity of text
+
 The tool is expected to provide a good user experience
 
-#### Task Definition
+### Task Definition
 
 Task: Information retrieval
+
 Input & Output: User query & A list of offers highly relevant to user’s query
+
 Database: Three dataset comprising categories, brands, retailers, and associated offers
+
 Objective: Given user query and database, retrieve and present the top 'k' offers that are most
 relevant to the user's query
 
-#### Pipeline: Core Retriever
+### Pipeline: Core Retriever
 
 The main question is how to build an effective retriever when working with a database of entries.
 Typically, two solutions are considered for the Information Retrieval (IR) task.
@@ -56,7 +62,7 @@ query 2) Its limitation can be avoided by using pre-trained models
 To further improve the performance, I chose to deploy a rerank algorithm for the retrieved offers,
 to better adapt to complex semantic search situations.
 
-#### Pipeline: User-friendly Features
+### Pipeline: User-friendly Features
 
 _User Scenario 1 : User Query with Typo_
 Suppose a user enters his query with typos (e.g., ’targt’ instead of ‘target’), how to ensure the tool
@@ -79,7 +85,7 @@ string to provide users with a quick and informative overview of offers, signifi
 app experience.
 
 
-#### Appendix: Technical Specifications
+### Appendix: Technical Specifications
 
 _1. Character-level Matching (Ngram Fuzzy Search)_
     _a._ Ngram Similarity Calculation
