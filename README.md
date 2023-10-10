@@ -34,24 +34,24 @@ Typically, two solutions are considered for the Information Retrieval (IR) task.
 
 #### 1. BM 25 Frequency-based Retriever 
 ##### Pros : 
-    a. BM25 is computationally efficient (no training needed) and scales well for a mobile app
+a. BM25 is computationally efficient (no training needed) and scales well for a mobile app
        environment with potentially large datasets
-    b. It can be effective for simple search tasks, such as category, brand, or retailer lookup
+b. It can be effective for simple search tasks, such as category, brand, or retailer lookup
 ##### Cons : 
-    a. BM25 does not consider the semantic meaning or context of the user query, which may
+a. BM25 does not consider the semantic meaning or context of the user query, which may
        result in suboptimal ranking, so the algorithm might not select the potential offers that
        best fit with users’ query
-    b. BM25 does not adapt to changing user behavior or preferences
+b. BM25 does not adapt to changing user behavior or preferences
 
 #### 2.Neural Retriever (SentenceTransformer): 
 ##### Pros : 
-    a. Better performance on information retrieval benchmark, which is to say, the potential
+a. Better performance on information retrieval benchmark, which is to say, the potential
        offers that returned to the user will be more accurate
-    b. Align well with user intent by capturing complex semantic relationships between queries,
+b. Align well with user intent by capturing complex semantic relationships between queries,
        which will generate relevant and context-aware potential offers relevant to the user
        queries
 ##### Cons : 
-    a. Rely on large amounts of labeled data for training, and the availability of such data for
+a. Rely on large amounts of labeled data for training, and the availability of such data for
        specific retail domains and offer categories may vary, affecting the performance of the
        algorithm
 
@@ -85,23 +85,19 @@ app experience.
 
 ### Appendix: Technical Specifications
 #### 1. Character-level Matching (Ngram Fuzzy Search) 
-    a. Ngram Similarity Calculation
-    Begin by calculating character-level similarity between the user’s typo query and potential
-    actual queries.
-    b. Threshold-Based Filtering
-    Next, filter out potential queries that fall below a defined threshold.
-    c. Top-K Potential Queries
-    Finally, return the top-K potential queries based on their similarity scores.
+a. Ngram Similarity Calculation
+Begin by calculating character-level similarity between the user’s typo query and potential actual queries.
+b. Threshold-Based Filtering
+Next, filter out potential queries that fall below a defined threshold.
+c. Top-K Potential Queries
+Finally, return the top-K potential queries based on their similarity scores.
 
 #### 2. SentenceTransformer 
-    a. Semantic Representation
-    Begin by converting database entries and user query into vectorized representations using
-    SentenceTransformer.
-    b. Bi-Encoder to Retrieve
-    Next, use bi-encoder to calculate cosine similarity scores between representations of query
-    and available offers, then retrieves a list of potentially offers relevant to the query.
-    c. Cross-Encoder to Rerank
-    Finally, use cross-encoder to score the retrieved offers within the context of the query, then
-    generate the ultimate search results.
+a. Semantic Representation
+Begin by converting database entries and user query into vectorized representations using SentenceTransformer.
+b. Bi-Encoder to Retrieve
+Next, use bi-encoder to calculate cosine similarity scores between representations of query and available offers, then retrieves a list of potentially offers relevant to the query.
+c. Cross-Encoder to Rerank
+Finally, use cross-encoder to score the retrieved offers within the context of the query, then generate the ultimate search results.
 
 
