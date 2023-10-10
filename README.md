@@ -58,8 +58,7 @@ Cons:
 
 **_3. Solution Retriever_**
 I chose Neural Retriever as the solution method, for 1) Its better performance to understand user’s
-query 2) Its limitation can be avoided by using pre-trained models
-
+query 2) Its limitation can be avoided by using pre-trained models. 
 To further improve the performance, I chose to deploy a rerank algorithm for the retrieved offers,
 to better adapt to complex semantic search situations.
 
@@ -89,6 +88,7 @@ app experience.
 ### Appendix: Technical Specifications
 
 _1. Character-level Matching (Ngram Fuzzy Search)_
+
     _a._ Ngram Similarity Calculation
     Begin by calculating character-level similarity between the user’s typo query and potential
     actual queries.
@@ -98,6 +98,7 @@ _1. Character-level Matching (Ngram Fuzzy Search)_
     Finally, return the top-K potential queries based on their similarity scores.
 
 _2. SentenceTransformer_
+
     _a._ Semantic Representation
     Begin by converting database entries and user query into vectorized representations using
     SentenceTransformer.
