@@ -42,6 +42,7 @@ Cons:
        result in suboptimal ranking, so the algorithm might not select the potential offers that
        best fit with users’ query
     b. BM25 does not adapt to changing user behavior or preferences
+    
 **2. Neural Retriever (SentenceTransformer)**
 Pros:
     a. Better performance on information retrieval benchmark, which is to say, the potential
@@ -93,25 +94,8 @@ _1. Character-level Matching (Ngram Fuzzy Search)_
     actual queries.
     _b._ Threshold-Based Filtering
     Next, filter out potential queries that fall below a defined threshold.
-
-```
-Search Query Query Identification Select^ Relevant Offers^ Present Offers
-```
-```
-Ngram Fuzzy Search
-(App Feature 1)
-```
-```
-SentenceTransformer
-(Solution Retriever)
-```
-```
-User-friendly Formats
-(App Feature 2)
-```
-
-_c._ Top-K Potential Queries
-Finally, return the top-K potential queries based on their similarity scores.
+    _c._ Top-K Potential Queries
+    Finally, return the top-K potential queries based on their similarity scores.
 
 _2. SentenceTransformer_
     _a._ Semantic Representation
