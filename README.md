@@ -30,13 +30,11 @@ cd /path/to/your/app/folder
 pip install uvicorn
 ```
 
-4. Start the POC ML system by running the following command:
+4. Start the POC ML system by running the following command to initiates the local server for the POC ML system:
 
 ```sh
 uvicorn app:app
 ```
-
-This command initiates the local server for the POC ML system.
 
 ### Step 3: Access the Swagger UI
 
