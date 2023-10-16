@@ -48,6 +48,13 @@ This command initiates the local server for the POC ML system.
 2. Navigate to [http://localhost:8000/docs]
 You will be greeted by the Swagger UI, which provides a user-friendly interface to interact with the API.
 
+## Deployment Sample
+
+The final deployment sample is as below:
+
+![image](https://github.com/alyzheng/NLP_search_algorithm_for_fetch_rewards/assets/114775966/ca667974-e523-4f9a-a2b9-c3de5f3c0664)
+![image](https://github.com/alyzheng/NLP_search_algorithm_for_fetch_rewards/assets/114775966/59cf4a6c-942a-4e9a-a1ea-18ab59fa12d8)
+
 ## Usage
 
 Explore the API documentation within the Swagger UI to understand the available endpoints and make use of the NLP search algorithm.
@@ -59,10 +66,3 @@ We welcome contributions and feedback from the community. Feel free to submit is
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Deployment Sample
-
-The final deployment sample is as below:
-
-![image](https://github.com/alyzheng/NLP_search_algorithm_for_fetch_rewards/assets/114775966/ca667974-e523-4f9a-a2b9-c3de5f3c0664)
-![image](https://github.com/alyzheng/NLP_search_algorithm_for_fetch_rewards/assets/114775966/59cf4a6c-942a-4e9a-a1ea-18ab59fa12d8)
