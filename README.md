@@ -6,9 +6,7 @@ Welcome to the Proof of Concept (POC) Machine Learning System designed to showca
 
 ### Step 1: Download the Repository
 
-Start by downloading the project's "app" folder to your local machine. You can do this by cloning the GitHub repository.
-
-For example: C:\Documents\NLP_search_algorithm_for_fetch_rewards-main\app>
+Start by downloading the project's "app" folder to your local machine. You can do this by cloning the GitHub repository:
 
 ```sh
 git clone https://github.com/yourusername/your-repo.git
@@ -18,7 +16,9 @@ git clone https://github.com/yourusername/your-repo.git
 
 1. Open a terminal or command prompt.
 
-2. Change the working directory to the "app" folder, where you downloaded the project:
+2. Change the working directory to the "app" folder, where you downloaded the project.
+
+For example: C:\Documents\NLP_search_algorithm_for_fetch_rewards-main\app>
 
 ```sh
 cd /path/to/your/app/folder
