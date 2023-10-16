@@ -41,13 +41,8 @@ cd /path/to/your/repository
 cd app
 ```
 
-4. Ensure you have the Uvicorn package installed. If you haven't already installed it, you can do so using pip:
 
-```sh
-pip install uvicorn
-```
-
-5. Start the POC ML system by running the following command to initiates the local server for the POC ML system:
+4. Start the POC ML system by running the following command to initiates the local server for the POC ML system:
 
 ```sh
 uvicorn app:app
