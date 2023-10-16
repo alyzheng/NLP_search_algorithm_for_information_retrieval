@@ -45,7 +45,7 @@ This command initiates the local server for the POC ML system.
 
 1. Open your preferred web browser (e.g., Chrome).
 
-2. Navigate to [http://localhost:8000/docs]
+2. Navigate to [http://localhost:8000/docs](http://localhost:8000/docs).
 You will be greeted by the Swagger UI, which provides a user-friendly interface to interact with the API.
 
 3. Click the “Try it out” button
