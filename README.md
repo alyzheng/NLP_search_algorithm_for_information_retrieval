@@ -18,7 +18,7 @@ git clone https://github.com/yourusername/your-repo.git
 
 2. Change the working directory to the "app" folder, where you downloaded the project.
 
-  For example: cd C:\Documents\NLP_search_algorithm_for_fetch_rewards-main\app>
+- For example: cd C:\Documents\NLP_search_algorithm_for_fetch_rewards-main\app>
 
 ```sh
 cd /path/to/your/app/folder
@@ -43,7 +43,7 @@ uvicorn app:app
 2. Navigate to [http://localhost:8000/docs](http://localhost:8000/docs).
 You will be greeted by the Swagger UI, which provides a user-friendly interface to interact with the API.
 
-**Be careful**: By default, our ML application is served at port 8000, not the URL provided by the command line"Uvicorn running on...".
+- **Be careful**: By default, our ML application is served at port 8000, not the URL provided by the command line"Uvicorn running on...".
 
 4. Click the “Try it out” button
 
