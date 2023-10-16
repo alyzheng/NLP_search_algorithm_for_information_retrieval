@@ -6,6 +6,7 @@ Now Fetch wants to develop an effective tool for users to search for offers easi
 
 The solution pipeline allows users to intelligently search offers by entering category/brand/retailer from the user.
 
+
 To boot up the POC ML system:
 
 Step 1: Please download the "app" folder, then run the POC ML system locally using uvicorn (please make sure the working directory is in the "app" folder. and install uvicorn package if not yet):
@@ -14,8 +15,10 @@ uvicorn app:app
 
 Step 2: Navigate with our browser (e.g., Chrome) to **http://localhost:8000/docs**. There, we find the Swagger UI of our API.
 
+
 **Be careful:**
 By default, our ML application is served at port 8000, not the URL provided by the command line "Uvicorn running on..."). 
+
 
 The final deployment sample is as below:
 
