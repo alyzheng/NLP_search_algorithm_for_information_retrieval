@@ -55,7 +55,7 @@ uvicorn app:app
 2. Navigate to [http://localhost:8000/docs](http://localhost:8000/docs).
 You will be greeted by the Swagger UI, which provides a user-friendly interface to interact with the API.
 
-- **Be careful**: By default, our ML application is served at port 8000, not the URL provided by the command line"Uvicorn running on...".
+- **BE CAREFUL**: By default, our ML application is served at port 8000, not the URL provided by the command line"Uvicorn running on...".
   
 
 ### Step 4: Interact with the Swagger UI
