@@ -4,6 +4,15 @@ Welcome to the Proof of Concept (POC) Machine Learning System designed to showca
 
 ## Getting Started
 
+### Requirements
+
+Before you begin, make sure you have the following prerequisites installed on your system:
+
+- Python
+- uvicorn
+- fastapi
+- Sentence-Transformer
+  
 ### Step 1: Download the Repository
 
 Start by downloading the project's "app" folder to your local machine. You can do this by cloning the GitHub repository:
@@ -18,19 +27,25 @@ git clone https://github.com/yourusername/your-repo.git
 
 2. Change the working directory to the "app" folder, where you downloaded the project.
 
-- For example: cd C:\Documents\NLP_search_algorithm_for_fetch_rewards-main\app>
+- For example: cd C:\Documents\NLP_search_algorithm_for_fetch_rewards-main>
 
 ```sh
-cd /path/to/your/app/folder
+cd /path/to/your/repository
 ```
 
-3. Ensure you have the Uvicorn package installed. If you haven't already installed it, you can do so using pip:
+3. Navigate to the "app" folder
+
+```sh
+cd app
+```
+
+4. Ensure you have the Uvicorn package installed. If you haven't already installed it, you can do so using pip:
 
 ```sh
 pip install uvicorn
 ```
 
-4. Start the POC ML system by running the following command to initiates the local server for the POC ML system:
+5. Start the POC ML system by running the following command to initiates the local server for the POC ML system:
 
 ```sh
 uvicorn app:app
