@@ -8,10 +8,12 @@ Welcome to the Proof of Concept (POC) Machine Learning System designed to showca
 
 Before you begin, make sure you have the following prerequisites installed on your system:
 
-- Python
+- python
 - uvicorn
 - fastapi
-- Sentence-Transformer
+- sentence_transformer
+
+You can install the packages by using "pip install"
   
 ### Step 1: Download the Repository
 
@@ -59,15 +61,21 @@ uvicorn app:app
 You will be greeted by the Swagger UI, which provides a user-friendly interface to interact with the API.
 
 - **Be careful**: By default, our ML application is served at port 8000, not the URL provided by the command line"Uvicorn running on...".
+  
 
-4. Click the “Try it out” button
+### Step 4: Interact with the Swagger UI
 
-5. Enter a value for the user query(brand/category/retailer), then click "Execute".
+1.  Click the down arrow to expand the POST function.
+    
+2.  Click the “Try it out” button.
+
+3.  Change the "string" part under the Request body to a user query(e.g., 'target').
+  
+4.  Click "Execute" to send the request and see the results.
 
 ## Deployment Sample
 
 The final deployment sample is as below:
-
 
 ![image](https://github.com/alyzheng/NLP_search_algorithm_for_fetch_rewards/assets/114775966/2e23587c-cbd2-4284-aaaa-41c86b46a078)
 ![image](https://github.com/alyzheng/NLP_search_algorithm_for_fetch_rewards/assets/114775966/4c85b171-3d01-4d82-b348-5bac988eb426)
