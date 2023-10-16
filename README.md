@@ -4,11 +4,6 @@ Welcome to the Proof of Concept (POC) Machine Learning System designed to showca
 
 ## Getting Started
 
-### Prerequisites
-
-- [Python](https://www.python.org/) (recommended version 3.6 or higher)
-- [Uvicorn](https://www.uvicorn.org/)
-
 ### Step 1: Download the Repository
 
 Start by downloading the project's "app" folder to your local machine. You can do this by cloning the GitHub repository:
@@ -48,9 +43,11 @@ This command initiates the local server for the POC ML system.
 2. Navigate to [http://localhost:8000/docs](http://localhost:8000/docs).
 You will be greeted by the Swagger UI, which provides a user-friendly interface to interact with the API.
 
-3. Click the “Try it out” button
+**Be careful**: By default, our ML application is served at port 8000, not the URL provided by the command line"Uvicorn running on...".
 
-4. Enter a value for the user query(brand/category/retailer), then click "Execute".
+4. Click the “Try it out” button
+
+5. Enter a value for the user query(brand/category/retailer), then click "Execute".
 
 ## Deployment Sample
 
