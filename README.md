@@ -11,6 +11,7 @@ Start by downloading the project's "app" folder to your local machine. You can d
 ```sh
 git clone https://github.com/yourusername/your-repo.git
 ```
+For example: C:\Documents\NLP_search_algorithm_for_fetch_rewards-main\app>
 
 ### Step 2: Run the POC ML System
 
