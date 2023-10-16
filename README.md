@@ -18,7 +18,7 @@ git clone https://github.com/yourusername/your-repo.git
 
 2. Change the working directory to the "app" folder, where you downloaded the project.
 
-  For example: C:\Documents\NLP_search_algorithm_for_fetch_rewards-main\app>
+  For example: cd C:\Documents\NLP_search_algorithm_for_fetch_rewards-main\app>
 
 ```sh
 cd /path/to/your/app/folder
